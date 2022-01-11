@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8" />
 
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -15,7 +14,7 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- <script src="sketch.js"></script> -->
+  <script src="sketch.js"></script>
 
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -23,82 +22,119 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
-
   <article class="grid-container">
     <!-- HEADER  -->
     <header class="site-header">
       <h1>
+        FRANCESCO CORDOLA <br>
+        Information Experience Designer <br>
+        exploring relationships between data, nature and emerging
+        technologies.
+        <!-- &#8627; <a href="https://graduateshowcase.arts.ac.uk/projects/3018/cover" target="_blank">Have a look at my
+          research</a><br> -->
+        <br>
+        <br>
+
+        <!-- PROJECTS<br>
+        <div>
+          + <a href="https://github.com/francescordola/autumn-season" target="_blank">Autumn Season</a>
+        </div>
+        <div>
+          + <a href="https://vimeo.com/437410164" target="_blank">Moving in the wind - 1</a> <a
+            href="https://vimeo.com/437411684" target="_blank">- 2</a>
+        </div>
+        <div>
+          + <a href="https://www.behance.net/gallery/103155489/Unknown-Quantities-7" target="_blank">UQ#7</a>
+        </div>
+        <div>
+          + <a href="https://www.behance.net/gallery/63962369/ATLANTE-DEL-CIBO-DI-TORINO-METROPOLITANA"
+            target="_blank">Atlas of food</a>
+        </div>
+        <div>
+          + <a href="https://www.behance.net/gallery/62758265/ATLANTE-DEL-CIBO-Report" target="_blank">Atlas of food -
+            Report</a>
+        </div>
+        <br>
+        <br> -->
+
+        <!-- FOLLOW ME<br> -->
+        <!-- + <a href="mailto:hello@francescordola.com" target="_blank">Email</a> <br> -->
+        + <a href="https://www.instagram.com/francescordola/" target="_blank">Instagram</a> <br>
+        + <a href="https://www.linkedin.com/in/francesco-cordola/" target="_blank">Linkedin</a>
+        <br>
+      </h1>
+
+      <!-- <h1>
         HI! I'm
         <b>FRANCESCO CORDOLA</b>, designer and researcher exploring relationships between data, nature and emerging
         technologies.</br>
         (📈🌿🤖) &#8627; <a href="https://graduateshowcase.arts.ac.uk/projects/3018/cover" target="_blank">Have a look at my research!</a> 
       
-        <!-- I'm a fresh graduate from the Master in Graphic Communication Design at Central Saint Martins, London -->
-      </h1>
+        I'm a fresh graduate from the Master in Graphic Communication Design at Central Saint Martins, London
+      </h1> -->
     </header>
 
     <!-- PROJECTS  -->
-    <div class="bar"></div>
-
+    <!-- <div class="bar"></div>
     <section>
       <div class="info-box" id="project-1">
         <a href="https://github.com/francescordola/autumn-season" target="_blank">Autumn Season</a> 
       </div>
-
       <div class="info-box" id="project-2">
         <a href="https://vimeo.com/437410164" target="_blank">Moving in the wind - 1</a> <a href="https://vimeo.com/437411684" target="_blank">- 2</a> 
       </div>
-
       <div class="info-box" id="project-3">
         <a href="https://www.behance.net/gallery/103155489/Unknown-Quantities-7" target="_blank">UQ#7</a>
       </div>
-
       <div class="info-box" id="project-4">
         <a href="https://www.behance.net/gallery/63962369/ATLANTE-DEL-CIBO-DI-TORINO-METROPOLITANA" target="_blank">Atlas of food</a>
       </div>
-
       <div class="info-box" id="project-5">
         <a href="https://www.behance.net/gallery/62758265/ATLANTE-DEL-CIBO-Report" target="_blank">Atlas of food - Report</a>
       </div>
 
-      <!-- <div class="info-box" id="project-6">
+      <div class="info-box" id="project-6">
         <a href="https://www.behance.net/gallery/60880507/Uno-nessuno-32000">Uno, nessuno, 32000</a>
-      </div> -->
-    </section>
+      </div>
+    </section> -->
 
     <!-- JAVA  -->
     <script>
       var dots = window.setInterval(function () {
         var wait = document.getElementById("wait");
-        if (wait.innerHTML.length > 2)
-          wait.innerHTML = "";
+        if (wait.innerHTML.length > 10)
+          wait.innerHTML = " ";
         else
           wait.innerHTML += ".";
-      }, 500);
+      }, 300);
     </script>
 
     <!-- CANVAS  -->
     <div id="canvas-show"></div>
 
     <!-- FOOTER  -->
+    <!-- CONTACTS -->
     <footer>
-      <div class="contacts link">
+      <!-- <div class="contacts link">
         Let's get in touch:
         <a href="https://www.instagram.com/francescordola/" target="_blank">IG,</a>
         <a href="https://www.linkedin.com/in/francesco-cordola/" target="_blank">LN,</a>
-        <!-- <a href="https://github.com/francescordola" target="_blank">GitHub,</a> -->
+        <a href="https://github.com/francescordola" target="_blank">GitHub,</a>
         <a href="mailto:hello@francescordola.com" target="_blank">Email</a>
-      </div>
+      </div> -->
 
       <div class="colophon link-colophon">
-        &copy; 2020 <a href="https://francescordola.com">francescordola</a> (new website coming soon<span
-          id="wait">.</span>)
+        <!-- &copy; 2020 <a href="https://francescordola.com">francescordola</a>  -->
+        <br>
+        
+        new website on the way<span id="wait">.</span>
       </div>
     </footer>
 

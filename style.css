@@ -4,6 +4,7 @@ body {
   width: 100vw;
   margin: 0;
 }
+
 .grid-container {
   min-height: 100%;
   margin: 0;
@@ -11,36 +12,47 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
 }
+
 /* HEADER */
 .site-header {
   grid-row: 1;
-  grid-column: 1/7;
-  padding: 0 2vw 0 2vw;
+  grid-column: 1/4;
+  padding: 0px 10px 0px 20px;
 }
+
 .site-header h1 {
-  margin: 0.5em 0 2em 0;
-  font-size: 26px;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  /* margin: 10px 0 10px 0; */
+  font-size: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
   z-index: 1;
-  letter-spacing: -0.25px;
+  /* letter-spacing: -0.25px; */
 }
+
 .site-header b {
   font-weight: 600;
 }
+
 .site-header a {
   color: black;
   text-decoration: none;
-  font-weight: 600;
-  font-family: 'Work Sans', sans-serif;
-}
-.site-header a:hover {
+  font-weight: 300;
+  font-family: 'IBM Plex Mono',
+  monospace;
   text-decoration: underline;
+  text-decoration-style:dotted;
 }
+
+/* .site-header a:hover {
+  text-decoration: underline dotted;
+  color: black
+} */
+
 .bar {
   border-left: 1px solid black;
   grid-column: 7;
 }
+
 /* CANVAS */
 #canvas-show {
   position: fixed;
@@ -50,6 +62,7 @@ body {
   left: 0;
   z-index: -2;
 }
+
 /* PROJECTS */
 section {
   display: grid;
@@ -57,12 +70,14 @@ section {
   grid-template-rows: 1fr;
   grid-column: 1/13;
 }
+
 section .info-box {
   padding: 7px 0 7px 2vw;
   border-top: 1px solid black;
   border-left: 1px solid black;
   font-size: 16px;
 }
+
 section .info-box a {
   font-size: 16px;
   text-decoration: none;
@@ -70,80 +85,119 @@ section .info-box a {
   font-weight: 500;
   color: black;
 }
-section .info-box a:hover {
+
+/* section .info-box a:hover {
   text-decoration: underline;
-}
+} */
+
 section #project-1 {
   grid-row: 1;
   grid-column: 7/13;
 }
+
 section #project-2 {
   grid-row: 2;
   grid-column: 7/13;
 }
+
 section #project-3 {
   grid-row: 3;
   grid-column: 7/13;
 }
+
 section #project-4 {
   grid-row: 4;
   grid-column: 7/13;
 }
+
 section #project-5 {
   grid-row: 5;
   grid-column: 7/13;
 }
+
 /* FOOTER */
 footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
-  font-size: 14px;
-  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 12px;
+  font-family: 'IBM Plex Mono',
+  monospace;
   grid-row: 8;
   grid-column: 1/13;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
   color: black;
+  font-weight: 300;
+  padding: 0px 0px 10px 20px;
 }
+
+span .frecce {
+  left: 0;
+}
+
 footer .contacts {
   grid-column: 1/7;
   padding: 7px 6vw 7px 2vw;
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
 }
+
 footer .contacts a {
   font-family: 'Work Sans', sans-serif !important;
   font-size: 16px !important;
 }
+
 footer .colophon {
-  grid-column: 7/12;
-  padding: 7px 2vw 7px 2vw;
-  border-left: 1px solid black;
+  grid-column: 1/12;
+  /* padding: 10px 10px 10px 20px; */
+  /* border-left: 1px solid black; */
 }
+
 footer .link a {
   color: black;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
 }
-footer .link a:hover {
+
+/* footer .link a:hover {
   text-decoration: underline;
-}
+} */
+
 footer .link-colophon a {
   color: black;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 }
+
+
+
+/* MOBILE */
 @media only screen and (max-device-width: 480px) {
   .site-header {
     grid-row: 1;
     grid-column: 1/13;
-    padding: 0 2vw 0 2vw;
+    padding: 0 10px 0 10px;
   }
+
+  .site-header a{
+    text-decoration: none;
+  }
+
+  body {
+    height: 50vh;
+    width: 80vw;
+    margin: 0;
+  }
+
+  footer {
+    padding: 0px 0px 10px 10px;
+  }
+
   /* PROJECTS */
   section {
     display: grid;
@@ -151,43 +205,53 @@ footer .link-colophon a {
     grid-template-rows: 1fr;
     grid-column: 1/13;
   }
+
   section .info-box {
     padding: 7px 0 7px 2vw;
     border-left: none;
     font-size: 16px;
   }
+
   section .info-box a {
     font-size: 16px;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     color: black;
   }
+
   section #project-1 {
     grid-row: 2;
     grid-column: 1/13;
   }
+
   section #project-2 {
     grid-row: 3;
     grid-column: 1/13;
   }
+
   section #project-3 {
     grid-row: 4;
     grid-column: 1/13;
   }
+
   section #project-4 {
     grid-row: 5;
     grid-column: 1/13;
   }
+
   section #project-5 {
     grid-row: 6;
     grid-column: 1/13;
   }
+
   section #project-6 {
     grid-row: 7;
     grid-column: 1/13;
   }
 }
-/* a:hover {
-  background-color: rgb(255, 208, 0);
-} */
+
+a:hover {
+  /* background-color: rgb(251, 255, 0); */
+  text-decoration: none;
+}
